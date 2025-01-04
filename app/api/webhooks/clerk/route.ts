@@ -80,7 +80,10 @@ export async function POST(req: Request) {
         },
       });
     }
+    console.log("User created from mongo", newUser);
+    console.log("User created user",user );
 
+    
     return NextResponse.json({ message: "OK", user: newUser });
   }
 
